@@ -1,0 +1,96 @@
+﻿#dragandrophandler {
+    border: 2px dashed #15317E;
+    width: 450px;
+    height: 150px;
+    color: #92AAB0;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 200%;
+    cursor: pointer;
+    background-color: azure;
+    margin-top: 10px;
+}
+    #dragandrophandler p
+    {
+        margin-top: 50px;
+        color: darkblue;
+    }
+.progressBar  {
+    width: 190px;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 10px 0 0;
+    vertical-align: top;
+}
+
+    .progressBar div{
+        height: 100%;
+        color: #fff;
+        text-align: right;
+        line-height: 18px; /* same as #progressBar height if we want text middle aligned */
+        width: 0;
+        background-color: #017a1e;
+        border-radius: 3px;
+    }
+
+.statusbar {
+    border-top: 1px solid #A9CCD1;
+    min-height: 22px;
+    width: 530px;
+    padding: 0 5px 0 0;
+    vertical-align: top;
+}
+
+
+    .statusbar:nth-child(odd) {
+        background: #EBEFF0;
+    }
+
+.filename {
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    margin: 3px 0 0 2px;
+}
+
+.filesize {
+    display: inline-block;
+    vertical-align: top;
+    color: #30693D;
+    width: 60px;
+    margin: 3px 2px 0 2px;
+    color: #006808;
+}
+
+.abort {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    color: #fff;
+    font-family: arial;
+    font-size: 13px;
+    font-weight: normal;
+    cursor: pointer;
+    vertical-align: top;
+    margin-left: 10px;
+    
+}
+    .abort img
+    {
+        height: 18px;
+        width: 20px;
+    }
+#status1
+{
+    font-family: arial;
+    font-size: 13px;
+    font-weight: normal;
+    color: green;
+}

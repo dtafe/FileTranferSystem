@@ -1,0 +1,13 @@
+﻿from DataDesign {DD_MEMBER_NAME}
+
+Please access following url  for  upload file
+
+URL:
+{UrlPortal}/Form/uploadCustomer.aspx?customerId={customer_id}
+
+Customer Id : {customer_id}
+Password    : {customer_Password}
+
+DataDesign Internal ID : {TD_FILE_SHARING_INFORATION.ID}
+
+Expiration Date : {TD_FILE_SHARING_INFORMATION.Expiration_date}

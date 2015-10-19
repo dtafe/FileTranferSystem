@@ -1,0 +1,4 @@
+Dear! Administrator.
+please access to administration page membership, 
+http://ftss.azurewebsites.net/Form/ManagerMember.aspx 
+in activate the account.

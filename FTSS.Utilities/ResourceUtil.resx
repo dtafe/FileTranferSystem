@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TITLE_CONFIRM" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="TITLE_ERROR" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="TITLE_INFO" xml:space="preserve">
+    <value>情報</value>
+  </data>
+  <data name="MSG_REQUIRED_INPUT_DATE_FIELD" xml:space="preserve">
+    <value>{0} を日付形式にしてください。</value>
+  </data>
+  <data name="MSG_REQUIRED_INPUT_FIELD" xml:space="preserve">
+    <value>{0} は必須項目です</value>
+  </data>
+  <data name="MSG_REQUIRED_INPUT_NUMBER_FIELD" xml:space="preserve">
+    <value>{0} は数値です</value>
+  </data>
+  <data name="MSG_UPLOAD_SUCESS" xml:space="preserve">
+    <value>データが正常に登録されました。</value>
+  </data>
+  <data name="MSG_AT_LEAST_ONE_CUSTOMER" xml:space="preserve">
+    <value>一つ以上の顧客・ファイルを選択してください。</value>
+  </data>
+  <data name="MSG_SELECTED_FILE_ALREADY_UPLOAD" xml:space="preserve">
+    <value>選択ファイルは既にアップロードリストに存在しています。</value>
+  </data>
+  <data name="MSG_SELECTED_FILE_NOT_EXIST" xml:space="preserve">
+    <value>選択ファイルはローカルコンピュータに存在していません。</value>
+  </data>
+  <data name="MSG_WARN_DELETE_FILE" xml:space="preserve">
+    <value>ファイル {0} をアップロードリストから削除しますか？</value>
+  </data>
+  <data name="ButtonAddCustomer" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="ButtonAddFile" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="ButtonBrowse" xml:space="preserve">
+    <value>選択...</value>
+  </data>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="ButtonDeleteCustomer" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="ButtonDownload" xml:space="preserve">
+    <value>ダウンロード</value>
+  </data>
+  <data name="ButtonInviteUpload" xml:space="preserve">
+    <value>招待メールを送信</value>
+  </data>
+  <data name="ButtonLogin" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="ButtonUpload" xml:space="preserve">
+    <value>アップロード</value>
+  </data>
+  <data name="HEADER_CUSTOMER_NAME" xml:space="preserve">
+    <value>顧客名</value>
+  </data>
+  <data name="HEADER_DATE" xml:space="preserve">
+    <value>日付</value>
+  </data>
+  <data name="HEADER_NO" xml:space="preserve">
+    <value>番号</value>
+  </data>
+  <data name="LabelbUploadfilelist" xml:space="preserve">
+    <value>アップロードリスト</value>
+  </data>
+  <data name="LabelCustomerInfo" xml:space="preserve">
+    <value>顧客情報</value>
+  </data>
+  <data name="LabelCustomerList" xml:space="preserve">
+    <value>顧客リスト</value>
+  </data>
+  <data name="LabelCustomerName" xml:space="preserve">
+    <value>顧客名</value>
+  </data>
+  <data name="LabelEmailAddress" xml:space="preserve">
+    <value>メール</value>
+  </data>
+  <data name="LabelFile" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="LabelFileDownloadPeriod" xml:space="preserve">
+    <value>ダウンロード有効期限</value>
+  </data>
+  <data name="LabelModeSelect" xml:space="preserve">
+    <value>モード</value>
+  </data>
+  <data name="LabelPassword" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="LabelTermUpload" xml:space="preserve">
+    <value>有効期限</value>
+  </data>
+  <data name="LabelUploadFile" xml:space="preserve">
+    <value>ファイルのアップロード</value>
+  </data>
+  <data name="LabelUserAccount" xml:space="preserve">
+    <value>ユーザアカウント</value>
+  </data>
+  <data name="LabelWelcome" xml:space="preserve">
+    <value>ファイル転送・共有システムへようこそ</value>
+  </data>
+  <data name="MSG_AT_LEST_ONE_FILE_DOWNLOAD" xml:space="preserve">
+    <value>一つ以上のダウンロードファイルを選択してください。</value>
+  </data>
+  <data name="MSG_LOGIN_CUSTOMER_INVALID" xml:space="preserve">
+    <value>ログインIDが無効です。</value>
+  </data>
+  <data name="MSG_LOGIN_CUSTOMER_WRONG" xml:space="preserve">
+    <value>ログインIDもしくはパスワードが間違っています。</value>
+  </data>
+  <data name="MSG_LOGIN_WRONG" xml:space="preserve">
+    <value>ユーザアカウントもしくはパスワードが無効です。</value>
+  </data>
+  <data name="MSG_VALID_EMAIL" xml:space="preserve">
+    <value>メールアドレスが無効です。</value>
+  </data>
+  <data name="MSG_WAIT_UPLOAD" xml:space="preserve">
+    <value>お待ちください...</value>
+  </data>
+  <data name="MSG_FILE_DOWNLOAD_FOUND" xml:space="preserve">
+    <value>ダウンロードファイル</value>
+  </data>
+  <data name="LabelLoginID" xml:space="preserve">
+    <value>ログインID</value>
+  </data>
+  <data name="LabelTitleCheckOwnFile" xml:space="preserve">
+    <value>メンバーサイト（アップロードリスト確認）</value>
+  </data>
+  <data name="LabelTitleCustomerLogin" xml:space="preserve">
+    <value>ファイル転送・共有システム</value>
+  </data>
+  <data name="Val_RequiredLoginID" xml:space="preserve">
+    <value>ログインIDを入力してください。</value>
+  </data>
+  <data name="Val_RequiredLoginPass" xml:space="preserve">
+    <value>パスワードを入力してください。</value>
+  </data>
+  <data name="ButtonClose" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="MSG_AT_LEST_ONE_FILE_UPLOAD" xml:space="preserve">
+    <value>一つ以上のアップロードファイルを選択してください。</value>
+  </data>
+  <data name="ButtonUploadSend" xml:space="preserve">
+    <value>アップロード・招待メール送信</value>
+  </data>
+  <data name="ButtonLinkDelete" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="cbDisplayDeleted" xml:space="preserve">
+    <value>削除アイテムを含む</value>
+  </data>
+  <data name="ColCustomerName" xml:space="preserve">
+    <value>顧客名</value>
+  </data>
+  <data name="ColDate" xml:space="preserve">
+    <value>日付</value>
+  </data>
+  <data name="ColDelete" xml:space="preserve">
+    <value>削除済み</value>
+  </data>
+  <data name="ColEmailAdd" xml:space="preserve">
+    <value>メール追加</value>
+  </data>
+  <data name="ColFileName" xml:space="preserve">
+    <value>ファイル名</value>
+  </data>
+  <data name="ColFileSize" xml:space="preserve">
+    <value>ファイルサイズ</value>
+  </data>
+  <data name="ColMode" xml:space="preserve">
+    <value>モード</value>
+  </data>
+  <data name="ColNo" xml:space="preserve">
+    <value>番号</value>
+  </data>
+  <data name="ColPeriod" xml:space="preserve">
+    <value>有効期限</value>
+  </data>
+  <data name="LabelLoginID1" xml:space="preserve">
+    <value>ログインID</value>
+  </data>
+  <data name="LabelNoRecord" xml:space="preserve">
+    <value>レコードが見つかりませんでした。</value>
+  </data>
+  <data name="LabelTitleCheckOwnFile1" xml:space="preserve">
+    <value>メンバーサイト（アップロードファイル確認）</value>
+  </data>
+  <data name="LabelTitleCustomerLogin1" xml:space="preserve">
+    <value>ファイル転送・共有システム</value>
+  </data>
+  <data name="TextCustomerDownload" xml:space="preserve">
+    <value>顧客ダウンロードファイル</value>
+  </data>
+  <data name="TextCustomerUpload" xml:space="preserve">
+    <value>顧客アップロードファイル</value>
+  </data>
+  <data name="Val_RequiredLoginID1" xml:space="preserve">
+    <value>ログインIDを入力してください。</value>
+  </data>
+  <data name="Val_RequiredLoginPass1" xml:space="preserve">
+    <value>パスワードを入力してください。</value>
+  </data>
+  <data name="lBtnLoginCus" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="lBtnLoginMem" xml:space="preserve">
+    <value>管理者ログイン</value>
+  </data>
+  <data name="lBtnlogout" xml:space="preserve">
+    <value>ログアウト</value>
+  </data>
+  <data name="LabelDay" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="All_Files" xml:space="preserve">
+    <value>全てのファイル</value>
+  </data>
+  <data name="MAIL_DownloadSubject" xml:space="preserve">
+    <value>ダウンロード通知</value>
+  </data>
+  <data name="MAIL_InvitationSubject" xml:space="preserve">
+    <value>アップロードのご招待</value>
+  </data>
+  <data name="MAIL_UploadSubject" xml:space="preserve">
+    <value>アップロードのお知らせ</value>
+  </data>
+  <data name="ButtonAllFilesDelete" xml:space="preserve">
+    <value>全ファイルを削除</value>
+  </data>
+  <data name="ButtonAllFilesDownload" xml:space="preserve">
+    <value>全ファイルまとめダウンロード</value>
+  </data>
+  <data name="ButtonBack" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="ButtonDelete" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="LabelFiles" xml:space="preserve">
+    <value>ファイル一覧</value>
+  </data>
+  <data name="LabelInvitationTo" xml:space="preserve">
+    <value>ご招待</value>
+  </data>
+  <data name="lbExpirationDate" xml:space="preserve">
+    <value>有効期限</value>
+  </data>
+  <data name="lbMode.Text" xml:space="preserve">
+    <value>モード選択</value>
+  </data>
+  <data name="rdbCheckOwnFile.Text" xml:space="preserve">
+    <value>共有ファイル一覧</value>
+  </data>
+  <data name="rdbDownloadFile.Text" xml:space="preserve">
+    <value>顧客向けファイルのアップロード</value>
+  </data>
+  <data name="rdbIssueToCustomer.Text" xml:space="preserve">
+    <value>顧客アップロードID発行</value>
+  </data>
+  <data name="lbMsg.Text" xml:space="preserve">
+    <value>ログイン失敗</value>
+  </data>
+  <data name="lblTitle" xml:space="preserve">
+    <value>ファイル転送システム</value>
+  </data>
+  <data name="MSG_USER_NAME_IS_NULL.Text" xml:space="preserve">
+    <value>ユーザ名もしくはパスワードを入力してください</value>
+  </data>
+  <data name="ColAccount" xml:space="preserve">
+    <value>ユーザアカウント</value>
+  </data>
+  <data name="ColEmail" xml:space="preserve">
+    <value>メール追加</value>
+  </data>
+  <data name="ColName" xml:space="preserve">
+    <value>顧客名</value>
+  </data>
+  <data name="ColPassword" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="ColPermission" xml:space="preserve">
+    <value>パーミッション</value>
+  </data>
+  <data name="btnDemo" xml:space="preserve">
+    <value>パスワードを入力し</value>
+  </data>
+  <data name="ButtonClear" xml:space="preserve">
+    <value>クリア</value>
+  </data>
+  <data name="ButtonInsert" xml:space="preserve">
+    <value>インサート</value>
+  </data>
+  <data name="ButtonRegister" xml:space="preserve">
+    <value>・レジスタ</value>
+  </data>
+  <data name="ButtonSave" xml:space="preserve">
+    <value>セーブ</value>
+  </data>
+  <data name="ButtonSearch" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="ButtonUpdate" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="LabelAccount" xml:space="preserve">
+    <value>アカウント</value>
+  </data>
+  <data name="LabelEmail" xml:space="preserve">
+    <value>メール追加</value>
+  </data>
+  <data name="LabelInsertMember" xml:space="preserve">
+    <value>・レジスタメンバー</value>
+  </data>
+  <data name="LabelManagement" xml:space="preserve">
+    <value>マネージメントメンバー</value>
+  </data>
+  <data name="LabelName" xml:space="preserve">
+    <value>顧客名</value>
+  </data>
+  <data name="LabelRole" xml:space="preserve">
+    <value>役割</value>
+  </data>
+  <data name="LabelUpdateMember" xml:space="preserve">
+    <value>更新メンバー</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>管理者</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>使用者</value>
+  </data>
+  <data name="Waiting" xml:space="preserve">
+    <value>待っ</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>すべて</value>
+  </data>
+  <data name="Account_Fail" xml:space="preserve">
+    <value>アカウントまたは不正なパスワード</value>
+  </data>
+  <data name="ButtonEdit" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="ColCheck" xml:space="preserve">
+    <value>チェック</value>
+  </data>
+  <data name="LabelEdit" xml:space="preserve">
+    <value>編集一員</value>
+  </data>
+  <data name="LabelRegister" xml:space="preserve">
+    <value>アカウントを登録</value>
+  </data>
+  <data name="LabelRePassword" xml:space="preserve">
+    <value>パスワード確認</value>
+  </data>
+  <data name="MSG_MORE_ONE_SELECTED_ITEM" xml:space="preserve">
+    <value>1つのみ選択してください</value>
+  </data>
+  <data name="MSG_NONE_SELECTED_ITEM" xml:space="preserve">
+    <value>項目が選択されていません</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Title_NoActived" xml:space="preserve">
+    <value>アクティブ化されていない</value>
+  </data>
+  <data name="TITLE_PERMISSION" xml:space="preserve">
+    <value>管理者でログインしてください</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ButtonAdd" xml:space="preserve">
+    <value>加える</value>
+  </data>
+  <data name="lblAccount" xml:space="preserve">
+    <value>アカウント</value>
+  </data>
+  <data name="lblEmail" xml:space="preserve">
+    <value>メール追加</value>
+  </data>
+  <data name="lblEmail1" xml:space="preserve">
+    <value>メール追加</value>
+  </data>
+  <data name="lblName" xml:space="preserve">
+    <value>顧客名</value>
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="lblRole" xml:space="preserve">
+    <value>役割</value>
+  </data>
+  <data name="LinkButtonManagement" xml:space="preserve">
+    <value>管理ユーザー</value>
+  </data>
+  <data name="AccountExists" xml:space="preserve">
+    <value>アカウントがすでに存在する</value>
+  </data>
+  <data name="ButtonReset" xml:space="preserve">
+    <value>リセット</value>
+  </data>
+  <data name="RegisterFail" xml:space="preserve">
+    <value>・レジスタ失敗</value>
+  </data>
+  <data name="RegisterSuccess" xml:space="preserve">
+    <value> 成功・レジスタ</value>
+  </data>
+  <data name="UpdateFail" xml:space="preserve">
+    <value>更新は失敗</value>
+  </data>
+  <data name="UpdateSuccess" xml:space="preserve">
+    <value>更新成功</value>
+  </data>
+  <data name="AccountRegister" xml:space="preserve">
+    <value>アカウント保留中のアクティベーションがあります</value>
+  </data>
+  <data name="ActivatedAccount" xml:space="preserve">
+    <value>成功したアカウント登録し</value>
+  </data>
+  <data name="LinkButtonUse" xml:space="preserve">
+    <value>How to Use</value>
+  </data>
+  <data name="MSG_SENDFILE_SUCESS" xml:space="preserve">
+    <value>ファイルは、成功した送られ！</value>
+  </data>
+  <data name="lblDropdrag" xml:space="preserve">
+    <value>ドラッグアンドドロップするか、をクリックしファイルのアップロード</value>
+  </data>
+</root>

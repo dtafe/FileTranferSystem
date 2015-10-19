@@ -1,0 +1,7 @@
+﻿Data Design - File Trancefar and Sharing System
+
+Alert
+
+Customer download following file(s).
+ File name : {FileName}
+

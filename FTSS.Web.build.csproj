@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{02A7323F-837A-4AA9-A93F-2B11AC00D375}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FTSS.Web</RootNamespace>
+    <AssemblyName>FTSS.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\..\RESEARCH\FTSS\Lib\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\..\..\RESEARCH\FTSS\Lib\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Services.Client, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Microsoft.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\grid.css" />
+    <Content Include="CSS\simplePagination.css" />
+    <Content Include="CSS\Site.css" />
+    <Content Include="CSS\ThemeBlue.css" />
+    <Content Include="Form\CheckFiles.aspx" />
+    <Content Include="Form\CheckOwnFile.aspx" />
+    <Content Include="Form\Download.aspx" />
+    <Content Include="Form\DownloadCustomer.aspx" />
+    <Content Include="Form\LoginCustomer.aspx" />
+    <Content Include="Form\LoginMember.aspx" />
+    <Content Include="Form\Upload.aspx" />
+    <Content Include="Form\UploadCustomer.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\logo.JPG" />
+    <Content Include="MailTemplate\Alert_mail_download.txt" />
+    <Content Include="MailTemplate\Alert_mail_upload.txt" />
+    <Content Include="MailTemplate\Invitation_mail_body_download.txt" />
+    <Content Include="MailTemplate\Invitation_mail_body_upload.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form\AzureStorage.cs" />
+    <Compile Include="Form\CheckFiles.aspx.cs">
+      <DependentUpon>CheckFiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form\CheckFiles.aspx.designer.cs">
+      <DependentUpon>CheckFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form\CheckOwnFile.aspx.cs">
+      <DependentUpon>CheckOwnFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form\CheckOwnFile.aspx.designer.cs">
+      <DependentUpon>CheckOwnFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Download.aspx.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form\Download.aspx.designer.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DownloadCustomer.aspx.cs">
+      <DependentUpon>DownloadCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form\DownloadCustomer.aspx.designer.cs">
+      <DependentUpon>DownloadCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FTSSPageUtil.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form\LoginCustomer.aspx.cs">
+      <DependentUpon>LoginCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form\LoginCustomer.aspx.designer.cs">
+      <DependentUpon>LoginCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form\LoginMember.aspx.cs">
+      <DependentUpon>LoginMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form\LoginMember.aspx.designer.cs">
+      <DependentUpon>LoginMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Upload.aspx.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form\Upload.aspx.designer.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form\UploadCustomer.aspx.cs">
+      <DependentUpon>UploadCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form\UploadCustomer.aspx.designer.cs">
+      <DependentUpon>UploadCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Form\Site.Master" />
+    <None Include="Properties\PublishProfiles\ddcweb - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\ddcweb - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\Publish.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Script\" />
+    <Folder Include="Upload\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FTSS.Domain\FTSS.Domain.csproj">
+      <Project>{9c9c246a-e69a-4d27-a9c8-842b3d8d61f0}</Project>
+      <Name>FTSS.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FTSS.Utilities\FTSS.Utilities.csproj">
+      <Project>{8a75c1a7-bd6a-4108-8c10-fc75e9cba4a5}</Project>
+      <Name>FTSS.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\CheckOwnFileResource.resx" />
+    <EmbeddedResource Include="Form\LoginMember.resx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  
+  
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50442</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54043/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  	<Import Project="$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets"/>
+	
+   <PropertyGroup>	
+	<CvsModuleName>FTSS</CvsModuleName>						<!-- Module name in CVS Source Server			-->
+	<ReleaseDir>D:\DDV-RELEASE\FTSS</ReleaseDir>
+	<SolutionToBuild>FTSS.Web.sln</SolutionToBuild>			<!-- Main Solution								-->
+	<MSBuildProject>FTSS.Web.build.csproj</MSBuildProject>    <!-- This file must be placed in folder src		-->
+	<WebDir>FTSS.Web</WebDir>	
+	<SourceDir>Source</SourceDir>
+	
+	<WorkingDirectory>..</WorkingDirectory>
+    <BuildDir>$(WorkingDirectory)\build</BuildDir>
+	<DistdDir>$(WorkingDirectory)\dist</DistdDir>
+	<PrecompiledDir>$(WorkingDirectory)\PrecompiledWeb</PrecompiledDir>	
+	<CvsRoot>:pserver;username=admin;password=ddcddc;hostname=10.0.0.3;port=2401:/DDV</CvsRoot>
+	<CvsExe>C:\Program Files\CVSNT\cvs.exe</CvsExe>
+	<ConfigurationToBuild>build</ConfigurationToBuild>
+	<BuildLogFile>build.log</BuildLogFile>
+	<DevenvExe>C:\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\devenv.exe</DevenvExe>
+	<DotNetFrameworkDir>%WINDIR%\Microsoft.NET\Framework</DotNetFrameworkDir>
+	<FrameworkVersion>v4.0.30319</FrameworkVersion>
+	<PublishTool>$(DotNetFrameworkDir)\$(FrameworkVersion)\aspnet_compiler.exe</PublishTool>
+	<VirtualDisk>Z:</VirtualDisk>
+	
+	<BuildNumber>$(CCNetLabel)</BuildNumber>
+	<WebPublishDir>$(ReleaseDir)\$(BuildNumber)\PubWeb_Demo</WebPublishDir>	
+  </PropertyGroup> 
+  
+
+ <Target Name="Clean">
+		<RemoveDir 
+			Directories="$(BuildDir)" />
+	</Target>
+
+	<Target Name="Init" DependsOnTargets="Clean">
+	   <MakeDir
+			Directories="$(BuildDir)" />
+	</Target>
+  
+	<Target Name="Checkout" DependsOnTargets="Init">
+		<Time Format="yyyy/MM/dd HH:mm:ss">
+			<Output TaskParameter="FormattedTime" PropertyName="CurrentTime" />
+		</Time> 
+		<Message Text="Before Checkout: $(CurrentTime)" />
+		<Exec 
+			Command="&quot;$(CvsExe)&quot; -d $(CvsRoot) -q export -r HEAD -d $(BuildDir) -- $(CvsModuleName)"
+			WorkingDirectory="."
+		/>
+		<Time Format="yyyy/MM/dd HH:mm:ss">
+			<Output TaskParameter="FormattedTime" PropertyName="CurrentTime" />
+		</Time> 
+		<Message Text="After Checkout: $(CurrentTime)" />
+	</Target>
+		
+	<Target Name="Compile">
+		<Time Format="yyyy/MM/dd HH:mm:ss">
+			<Output TaskParameter="FormattedTime" PropertyName="CurrentTime" />
+		</Time> 
+		<Message Text="Before Compile Web Solution: $(CurrentTime)" />
+		
+		<Message Text="Start to build Project $(WorkingDirectory)\$(SourceDir)\$(MSBuildProject)" />
+		<Message Text="&quot;$(DevenvExe)&quot; &quot;$(SolutionToBuild)&quot; /build &quot;$(ConfigurationToBuildDebug)&quot; /out ..\$(BuildLogFile)" />
+		<Exec
+			Timeout="1200000" 
+			Command="&quot;$(DevenvExe)&quot; &quot;$(SolutionToBuild)&quot; /build &quot;$(ConfigurationToBuild)&quot; /out ..\$(BuildLogFile)"
+			WorkingDirectory="$(WorkingDirectory)\$(SourceDir)"
+		/>
+		<Message Text="Run for build number $(BuildNumber) successfully completed" />
+		
+		<Time Format="yyyy/MM/dd HH:mm:ss">
+			<Output TaskParameter="FormattedTime" PropertyName="CurrentTime" />
+		</Time> 
+		<Message Text="After Compile Web Solution: $(CurrentTime)" />
+	</Target>
+	
+	<Target Name="PublishWeb">	
+		<Time Format="yyyy/MM/dd HH:mm:ss">
+			<Output TaskParameter="FormattedTime" PropertyName="CurrentTime" />
+		</Time> 
+		<Message Text="Before PublishWeb: $(CurrentTime)" />
+		
+		<Exec
+			Timeout="600000" 
+			Command="&quot;$(PublishTool)&quot; -p &quot;$(WebDir)&quot; -f -fixednames -u -v / &quot;$(PrecompiledDir)&quot;"			
+			WorkingDirectory="$(WorkingDirectory)\$(SourceDir)"
+		/>	  
+		<Message Text="Rename WebConfig to Web.New.config" />
+		<Exec 
+			Command="REN Web.Config Web.New.Config"
+			WorkingDirectory="$(WorkingDirectory)\$(SourceDir)\$(PrecompiledDir)"	
+		/>	
+		<Time Format="yyyy/MM/dd HH:mm:ss">
+			<Output TaskParameter="FormattedTime" PropertyName="CurrentTime" />
+		</Time> 
+		<Message Text="After PublishWeb: $(CurrentTime)" />
+	  
+		<Message Text="Make publish dir"/>
+		<MakeDir Directories="$(ReleaseDir)" />
+		<RemoveDir Directories="$(ReleaseDir)\$(BuildNumber)" />
+		<MakeDir Directories="$(ReleaseDir)\$(BuildNumber)" />
+		<MakeDir Directories="$(FormPublishDir)" />
+		<MakeDir Directories="$(WebPublishDir)" />		
+		
+		<Exec 
+			Command="XCOPY /E /I /Q /R /Y * $(WebPublishDir)"
+			WorkingDirectory="$(WorkingDirectory)\$(SourceDir)\$(PrecompiledDir)"	
+		/>
+		
+	</Target>
+  
+	<Target Name="ContinuousIntergration" DependsOnTargets="Checkout">	
+		<Message Text="Start to build Project $(BuildDir)\$(MSBuildProject) on target DistPublish" />
+		<MSBuild
+            Projects="$(BuildDir)\$(SourceDir)\$(MSBuildProject)"
+            Targets="Compile"
+			StopOnFirstFailure="true"
+		/>	
+		<MSBuild
+            Projects="$(BuildDir)\$(SourceDir)\$(MSBuildProject)"
+            Targets="PublishWeb"
+			StopOnFirstFailure="true"
+		/>
+		<Message Text="CI Run for build number $(BuildNumber) successfully completed" />
+		
+	</Target>	
+</Project>

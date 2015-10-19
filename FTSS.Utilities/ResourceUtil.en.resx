@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TITLE_CONFIRM" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="TITLE_ERROR" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="TITLE_INFO" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="MSG_REQUIRED_INPUT_DATE_FIELD" xml:space="preserve">
+    <value>{0} must be in date/time format.</value>
+  </data>
+  <data name="MSG_REQUIRED_INPUT_FIELD" xml:space="preserve">
+    <value>{0} is a required field.</value>
+  </data>
+  <data name="MSG_REQUIRED_INPUT_NUMBER_FIELD" xml:space="preserve">
+    <value>{0} must be in numeric format.</value>
+  </data>
+  <data name="MSG_UPLOAD_SUCESS" xml:space="preserve">
+    <value>Uploaded successful!</value>
+  </data>
+  <data name="MSG_AT_LEAST_ONE_CUSTOMER" xml:space="preserve">
+    <value>Please set least one value Customer / File.</value>
+  </data>
+  <data name="MSG_SELECTED_FILE_ALREADY_UPLOAD" xml:space="preserve">
+    <value>Selected file is already in list.</value>
+  </data>
+  <data name="MSG_SELECTED_FILE_NOT_EXIST" xml:space="preserve">
+    <value>Selected file does not exist in local computer.</value>
+  </data>
+  <data name="MSG_WARN_DELETE_FILE" xml:space="preserve">
+    <value>Do you want to delete {0} from upload files list? (YES/NO)</value>
+  </data>
+  <data name="ButtonAddCustomer" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="ButtonAddFile" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="ButtonBrowse" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ButtonDeleteCustomer" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="ButtonDownload" xml:space="preserve">
+    <value>DownLoad</value>
+  </data>
+  <data name="ButtonInviteUpload" xml:space="preserve">
+    <value>Send invitation</value>
+  </data>
+  <data name="ButtonLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="ButtonUpload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="CheckboxAll" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="HEADER_CUSTOMER_NAME" xml:space="preserve">
+    <value>Customer Name</value>
+  </data>
+  <data name="HEADER_DATE" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="HEADER_NO" xml:space="preserve">
+    <value>No.</value>
+  </data>
+  <data name="LabelbUploadfilelist" xml:space="preserve">
+    <value>Upload file list</value>
+  </data>
+  <data name="LabelCustomerInfo" xml:space="preserve">
+    <value>Customer Information</value>
+  </data>
+  <data name="LabelCustomerList" xml:space="preserve">
+    <value>Customer List</value>
+  </data>
+  <data name="LabelCustomerName" xml:space="preserve">
+    <value>Customer Name</value>
+  </data>
+  <data name="LabelEmailAddress" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="LabelFile" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="LabelFileDownloadPeriod" xml:space="preserve">
+    <value>Expiration</value>
+  </data>
+  <data name="LabelModeSelect" xml:space="preserve">
+    <value>Mode Select</value>
+  </data>
+  <data name="LabelPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="LabelTermUpload" xml:space="preserve">
+    <value>Expires in</value>
+  </data>
+  <data name="LabelUploadFile" xml:space="preserve">
+    <value>Upload files</value>
+  </data>
+  <data name="LabelUserAccount" xml:space="preserve">
+    <value>User account</value>
+  </data>
+  <data name="LabelWelcome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="MSG_AT_LEST_ONE_FILE_DOWNLOAD" xml:space="preserve">
+    <value>Please select at least one download file</value>
+  </data>
+  <data name="MSG_LOGIN_CUSTOMER_INVALID" xml:space="preserve">
+    <value>Login ID is invalid.</value>
+  </data>
+  <data name="MSG_LOGIN_CUSTOMER_WRONG" xml:space="preserve">
+    <value>Login ID or password is incorrect.</value>
+  </data>
+  <data name="MSG_LOGIN_WRONG" xml:space="preserve">
+    <value>	Login ID or password is incorrect.	</value>
+  </data>
+  <data name="MSG_VALID_EMAIL" xml:space="preserve">
+    <value>E-mail address is invalid.</value>
+  </data>
+  <data name="MSG_WAIT_UPLOAD" xml:space="preserve">
+    <value>Please wait ...</value>
+  </data>
+  <data name="MSG_FILE_DOWNLOAD_FOUND" xml:space="preserve">
+    <value>Download file not found.</value>
+  </data>
+  <data name="LabelLoginID" xml:space="preserve">
+    <value>Login ID</value>
+  </data>
+  <data name="LabelTitleCustomerLogin" xml:space="preserve">
+    <value>File Transfer and Sharing System</value>
+  </data>
+  <data name="Val_RequiredLoginID" xml:space="preserve">
+    <value>Please input login ID.</value>
+  </data>
+  <data name="Val_RequiredLoginPass" xml:space="preserve">
+    <value>Please input password.</value>
+  </data>
+  <data name="LabelTitleCheckOwnFile" xml:space="preserve">
+    <value>Member site: Manage Files</value>
+  </data>
+  <data name="ButtonClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="MSG_AT_LEST_ONE_FILE_UPLOAD" xml:space="preserve">
+    <value>Please select at least one upload file</value>
+  </data>
+  <data name="ButtonUploadSend" xml:space="preserve">
+    <value>Upload/send</value>
+  </data>
+  <data name="ButtonLinkDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="cbDisplayDeleted" xml:space="preserve">
+    <value>Include deleted items.</value>
+  </data>
+  <data name="ColCustomerName" xml:space="preserve">
+    <value>Customer name</value>
+  </data>
+  <data name="ColDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="ColDelete" xml:space="preserve">
+    <value>Deleted</value>
+  </data>
+  <data name="ColEmailAdd" xml:space="preserve">
+    <value>Add e-mail</value>
+  </data>
+  <data name="ColFileName" xml:space="preserve">
+    <value>Filename</value>
+  </data>
+  <data name="ColFileSize" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="ColMode" xml:space="preserve">
+    <value>Mode</value>
+  </data>
+  <data name="ColNo" xml:space="preserve">
+    <value>No.</value>
+  </data>
+  <data name="ColPeriod" xml:space="preserve">
+    <value>Expires in </value>
+  </data>
+  <data name="LabelLoginID1" xml:space="preserve">
+    <value>Login ID</value>
+  </data>
+  <data name="LabelNoRecord" xml:space="preserve">
+    <value>No records found.</value>
+  </data>
+  <data name="LabelTitleCheckOwnFile1" xml:space="preserve">
+    <value>Member site: Manage Files</value>
+  </data>
+  <data name="LabelTitleCustomerLogin1" xml:space="preserve">
+    <value>File Transfer and Sharing System</value>
+  </data>
+  <data name="TextCustomerDownload" xml:space="preserve">
+    <value>Customer download file</value>
+  </data>
+  <data name="TextCustomerUpload" xml:space="preserve">
+    <value>Customer upload file</value>
+  </data>
+  <data name="Val_RequiredLoginID1" xml:space="preserve">
+    <value>Please input login ID.</value>
+  </data>
+  <data name="Val_RequiredLoginPass1" xml:space="preserve">
+    <value>Please input password.</value>
+  </data>
+  <data name="lBtnLoginCus" xml:space="preserve">
+    <value>Customer Login</value>
+  </data>
+  <data name="lBtnLoginMem" xml:space="preserve">
+    <value>Member Login</value>
+  </data>
+  <data name="lBtnlogout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="LabelDay" xml:space="preserve">
+    <value>Day(s)</value>
+  </data>
+  <data name="All_Files" xml:space="preserve">
+    <value>_package</value>
+  </data>
+  <data name="MAIL_DownloadSubject" xml:space="preserve">
+    <value>Download Notice</value>
+  </data>
+  <data name="MAIL_InvitationSubject" xml:space="preserve">
+    <value>Upload Invite</value>
+  </data>
+  <data name="MAIL_UploadSubject" xml:space="preserve">
+    <value>Upload Notice</value>
+  </data>
+  <data name="ButtonAllFilesDelete" xml:space="preserve">
+    <value>Delete all files</value>
+  </data>
+  <data name="ButtonAllFilesDownload" xml:space="preserve">
+    <value>Download all files</value>
+  </data>
+  <data name="ButtonBack" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="ButtonDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="LabelFiles" xml:space="preserve">
+    <value>Files</value>
+  </data>
+  <data name="LabelInvitationTo" xml:space="preserve">
+    <value>Invitation </value>
+  </data>
+  <data name="lbExpirationDate" xml:space="preserve">
+    <value>Expiration Date</value>
+  </data>
+  <data name="lbMode.Text" xml:space="preserve">
+    <value>Mode Select :  </value>
+  </data>
+  <data name="rdbCheckOwnFile.Text" xml:space="preserve">
+    <value>Manage shared files</value>
+  </data>
+  <data name="rdbDownloadFile.Text" xml:space="preserve">
+    <value>Upload files for customer download</value>
+  </data>
+  <data name="rdbIssueToCustomer.Text" xml:space="preserve">
+    <value>Issue customer upload ID</value>
+  </data>
+  <data name="lbMsg.Text" xml:space="preserve">
+    <value>Login failure</value>
+  </data>
+  <data name="lblTitle" xml:space="preserve">
+    <value>File Transfer System</value>
+  </data>
+  <data name="MSG_USER_NAME_IS_NULL.Text" xml:space="preserve">
+    <value>Username or Password cannot be null.</value>
+  </data>
+  <data name="ColAccount" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="ColEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ColName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ColPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="ColPermission" xml:space="preserve">
+    <value>Permission</value>
+  </data>
+  <data name="btnDemo" xml:space="preserve">
+    <value>DEMO</value>
+  </data>
+  <data name="ButtonClear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="ButtonInsert" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="ButtonRegister" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="ButtonSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="ButtonSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="ButtonUpdate" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="LabelAccount" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="LabelEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="LabelInsertMember" xml:space="preserve">
+    <value>Register member</value>
+  </data>
+  <data name="LabelManagement" xml:space="preserve">
+    <value>Management member</value>
+  </data>
+  <data name="LabelName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="LabelRole" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="LabelUpdateMember" xml:space="preserve">
+    <value>Update Member</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Waiting" xml:space="preserve">
+    <value>Waiting</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Account_Fail" xml:space="preserve">
+    <value>Account or password incorrect!</value>
+  </data>
+  <data name="ButtonEdit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ColCheck" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="LabelEdit" xml:space="preserve">
+    <value>Edit Member</value>
+  </data>
+  <data name="LabelRegister" xml:space="preserve">
+    <value>Register Account</value>
+  </data>
+  <data name="LabelRePassword" xml:space="preserve">
+    <value>Repeat Password</value>
+  </data>
+  <data name="Title_NoActived" xml:space="preserve">
+    <value>has not been activated</value>
+  </data>
+  <data name="TITLE_PERMISSION" xml:space="preserve">
+    <value>Please login with administrator</value>
+  </data>
+  <data name="MSG_MORE_ONE_SELECTED_ITEM" xml:space="preserve">
+    <value>Too many items selected.</value>
+  </data>
+  <data name="MSG_NONE_SELECTED_ITEM" xml:space="preserve">
+    <value>NONE SELECTED ITEM</value>
+  </data>
+  <data name="ButtonAdd" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="lblAccount" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="lblEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="lblEmail1" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="lblName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="lblRole" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="LinkButtonManagement" xml:space="preserve">
+    <value>Management User</value>
+  </data>
+  <data name="AccountExists" xml:space="preserve">
+    <value>Account already exists</value>
+  </data>
+  <data name="ButtonReset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="RegisterFail" xml:space="preserve">
+    <value>Register Fail</value>
+  </data>
+  <data name="RegisterSuccess" xml:space="preserve">
+    <value>Register success</value>
+  </data>
+  <data name="UpdateFail" xml:space="preserve">
+    <value>UPDATE FAIL</value>
+  </data>
+  <data name="UpdateSuccess" xml:space="preserve">
+    <value>Update Success</value>
+  </data>
+  <data name="AccountRegister" xml:space="preserve">
+    <value>There is an account pending activation</value>
+  </data>
+  <data name="ActivatedAccount" xml:space="preserve">
+    <value>Successfully registered the account</value>
+  </data>
+  <data name="LinkButtonUse" xml:space="preserve">
+    <value>How to Use</value>
+  </data>
+  <data name="MSG_SENDFILE_SUCESS" xml:space="preserve">
+    <value>Send file successful!</value>
+  </data>
+  <data name="lblDropdrag" xml:space="preserve">
+    <value>drag and drop or click file upload</value>
+  </data>
+</root>

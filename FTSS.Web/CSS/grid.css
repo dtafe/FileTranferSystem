@@ -1,0 +1,67 @@
+﻿.ddv_grid
+{
+    border-collapse:collapse;
+    border-color:#3366CC;
+    background-color:#ffffff;
+    border-style:none;
+    border-width:1px;
+}
+
+
+.ddv_grid td
+{
+    padding:4px;
+}
+
+.ddv_grid .td_header
+{
+    background-color: #666666;
+	text-align:center;
+	font-size:12px;
+	font-weight: bold;
+	color: #CCCCFF;
+}
+
+.ddv_grid .tr_body
+{
+    color:#003399;
+    background-color:White;
+}
+
+.ddv_grid .tr_footer
+{
+    color:#003399;
+    background-color:White;
+}
+
+
+
+.gridView
+{
+    background-color: White;
+    border-collapse: collapse;
+    border-color: #21374C;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.gridView .td_header
+{
+    padding: 6px 0 6px 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #15317E;
+    text-align: center;
+}
+
+.gridView .tr_body
+{
+    background-color: White;
+    color: #21374C;
+}
+
+.gridView .tr_body td
+{
+    padding:4px 0 2px 3px;
+}

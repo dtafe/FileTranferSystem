@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="FTSS.Web.Form.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="../CSS/Site.css" rel="stylesheet" type="text/css" />
+    <%-- <link rel="stylesheet" href="../Script/jqueryalert/css/jquery.alerts.css" />
+    <script type="text/javascript" src="../Script/jqueryalert/js/jquery.js"></script>
+    <script type="text/javascript" src="../Script/jqueryalert/js/jquery.alerts.js"></script>
+    <%--<script type="text/javascript" src="../Script/jqueryalert/js/jAlert.js"></script>--%>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style3 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="Form2" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+             </div>
+            <div style="float: right; height: 28px;">
+                <asp:MultiView ID="MultiView" runat="server">
+                    <asp:View ID="ViewLogin" runat="server">
+                        <table>
+                    <tr>
+                        <td>
+                            <asp:LinkButton ID="lBtnLoginMem" runat="server" CssClass="auto-style2" ForeColor="White" OnClick="lBtnLoginMem_Click"></asp:LinkButton>
+                        </td>
+                        <td>
+                            <asp:LinkButton ID="lBtnLoginCus" runat="server" CssClass="auto-style2" ForeColor="White" OnClick="lBtnLoginCus_Click"></asp:LinkButton>
+                        </td>
+                    </tr>
+                </table>
+                    </asp:View>
+                    <asp:View ID="ViewLogout" runat="server">
+                    <table>
+                        <tr>
+                          <td>
+                            <asp:LinkButton ID="lBtnlogout" runat="server"  ForeColor="White" OnClick="lBtnlogout_Click" Font-Size="Small"></asp:LinkButton>
+                           </td>
+                            <td>                           
+                            </td>
+                        </tr>
+                    </table>
+                    </asp:View>
+                </asp:MultiView>
+            </div>
+        </div>
+       <div class="main">
+            <div class="left">
+            <asp:Image ID="Image1" ImageUrl="~/Images/LogoDDV.jpg" CssClass="logo" runat="server" Width="143px" />
+            </div>
+	                <div class="language-object" >
+                            <asp:ImageButton runat="server" ID="ImgBtn_En" ImageUrl="~/Images/en-US.gif" 
+                                onclick="ImgBtn_En_Click" />
+                            <asp:ImageButton runat="server" ID="ImgBtn_Jp" ImageUrl="~/Images/ja-JP.gif" 
+                                onclick="ImgBtn_Jp_Click" />
+
+                    </div>
+            <div class="right">
+                <div style="text-align:center">
+                    <asp:Label ID="lblTitle" runat="server" Font-Size="X-Large" Text="File Transfer System" Font-Bold="True" ForeColor="#112990" ></asp:Label>
+                </div>
+                <br />
+                 <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="footer">
+            <asp:Label ID="LabelFooter" runat="server" BorderStyle="None">Copyright ©2015 DataDesign Co., Ltd. All rights reserved.</asp:Label>
+        </div>
+    </div>
+    
+    </form>
+</body>
+</html>
